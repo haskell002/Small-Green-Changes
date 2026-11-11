@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#174c38">
+  <meta name="description" content="A student volunteering project making our school greener through small, practical improvements.">
+  <title>Small Green Changes | A Greener School</title>
+  <style>
+    :root{--forest:#174c38;--green:#2f7652;--leaf:#9acb72;--lime:#d9edbd;--cream:#f8f7ef;--ink:#1e3027;--muted:#637269;--white:#fff;--line:#e3e8dc;--shadow:0 18px 45px rgba(23,76,56,.12)}
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .nav-wrap{position:sticky;top:0;z-index:20;background:rgba(248,247,239,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(23,76,56,.1)}
+    nav{max-width:1160px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--forest);letter-spacing:-.4px;font-size:1.04rem;white-space:nowrap}
+    .brand-logo{width:54px;height:54px;object-fit:contain;display:block;flex:0 0 auto;border:0;background:transparent;border-radius:0;padding:0}
+    .brand-copy{display:flex;flex-direction:column;line-height:1.2}
+    .brand-copy small{font-size:.68rem;font-weight:700;color:var(--muted);letter-spacing:.2px;margin-top:4px}
+    .nav-links{display:flex;gap:25px;align-items:center;font-size:.9rem;font-weight:700;color:#4d6256}
+    .nav-links a:hover{color:var(--green)}
+    .nav-cta{background:var(--forest);color:white!important;padding:10px 16px;border-radius:999px}
+    .menu-btn{display:none;background:none;border:0;color:var(--forest);font-size:1.5rem;cursor:pointer}
+    .hero{max-width:1160px;margin:auto;padding:70px 24px 82px;display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:56px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #d6e5c8;background:#eff6e7;border-radius:999px;padding:7px 13px;color:var(--green);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:1.2px}
+    .eyebrow span{width:8px;height:8px;border-radius:50%;background:#70ad4d}
+    h1{font-size:clamp(2.8rem,5.5vw,5rem);line-height:.99;letter-spacing:-3px;color:var(--forest);margin:23px 0 22px;max-width:650px}
+    h1 em{font-style:normal;color:var(--green);position:relative}
+    .hero p{font-size:1.1rem;color:var(--muted);max-width:540px;margin:0 0 28px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:999px;font-weight:800;font-size:.94rem;transition:transform .2s,box-shadow .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--forest);color:white;box-shadow:0 10px 22px rgba(23,76,56,.18)}
+    .btn-secondary{border:1px solid #d5dfd2;background:white;color:var(--forest)}
+    .hero-note{display:flex;align-items:center;gap:12px;margin-top:27px;color:var(--muted);font-size:.88rem}
+    .mini-leaves{display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--lime);border-radius:50%;font-size:20px}
+    .hero-visual{position:relative;min-height:520px}
+    .hero-photo{position:absolute;inset:0 25px 20px 20px;width:calc(100% - 45px);height:calc(100% - 20px);object-fit:cover;border-radius:180px 180px 28px 28px;box-shadow:var(--shadow)}
+    .photo-tag{position:absolute;left:0;bottom:0;background:white;border-radius:18px;padding:16px 19px;box-shadow:var(--shadow);max-width:245px}
+    .photo-tag strong{display:block;color:var(--forest);font-size:1rem}
+    .photo-tag span{color:var(--muted);font-size:.82rem}
+    .round-stamp{position:absolute;right:0;top:45px;width:104px;height:104px;border-radius:50%;background:var(--leaf);color:var(--forest);display:grid;place-items:center;text-align:center;font-size:.75rem;line-height:1.2;font-weight:900;transform:rotate(9deg);border:7px solid var(--cream)}
+    section{scroll-margin-top:90px}
+    .section{padding:83px 24px}
+    .section-inner{max-width:1100px;margin:auto}
+    .section-heading{text-align:center;max-width:690px;margin:0 auto 42px}
+    .kicker{color:var(--green);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:1.5px}
+    h2{font-size:clamp(2rem,4vw,3.15rem);line-height:1.1;letter-spacing:-1.5px;color:var(--forest);margin:10px 0 14px}
+    .section-heading p{color:var(--muted);margin:0;font-size:1.02rem}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+    .about-image{width:100%;height:440px;object-fit:cover;border-radius:24px;box-shadow:var(--shadow)}
+    .about-copy h3{font-size:1.65rem;line-height:1.2;color:var(--forest);margin:12px 0}
+    .about-copy p{color:var(--muted)}
+    .check-list{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:13px}
+    .check-list li{display:flex;gap:12px;align-items:flex-start;font-weight:700}
+    .check{flex:0 0 25px;height:25px;border-radius:50%;background:#e3f1d5;color:var(--green);display:grid;place-items:center;font-size:.85rem}
+    .activity-section{background:#edf3e5}
+    .activity-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .activity-card{background:white;border-radius:22px;overflow:hidden;box-shadow:0 10px 28px rgba(23,76,56,.07)}
+    .activity-card img{display:block;width:100%;height:270px;object-fit:cover}
+    .card-body{padding:21px 21px 24px}
+    .number{color:#78a95b;font-weight:900;font-size:.8rem;letter-spacing:1px}
+    .card-body h3{color:var(--forest);margin:7px 0;font-size:1.2rem}
+    .card-body p{color:var(--muted);font-size:.94rem;margin:0}
+    .benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+    .benefit{border:1px solid var(--line);background:white;border-radius:20px;padding:24px 20px;min-height:205px}
+    .benefit-icon{font-size:1.8rem;width:52px;height:52px;border-radius:16px;background:#edf5e5;display:grid;place-items:center;margin-bottom:17px}
+    .benefit h3{font-size:1.05rem;color:var(--forest);margin:0 0 8px}
+    .benefit p{font-size:.9rem;color:var(--muted);margin:0}
+    .help-section{background:var(--forest);color:white}
+    .help-section h2{color:white}.help-section .section-heading p{color:#d2e0d6}.help-section .kicker{color:var(--leaf)}
+    .help-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .help-item{border:1px solid rgba(255,255,255,.17);background:rgba(255,255,255,.06);border-radius:18px;padding:22px 17px}
+    .help-item .emoji{font-size:1.7rem}
+    .help-item h3{font-size:1rem;margin:12px 0 7px}
+    .help-item p{color:#d2e0d6;font-size:.87rem;margin:0}
+    .goal-panel{display:grid;grid-template-columns:1fr .75fr;gap:35px;align-items:center;background:#e5efda;border-radius:28px;padding:42px}
+    .goal-panel h2{margin-top:8px}.goal-panel p{color:#52675a}
+    .goal-quote{background:white;border-radius:22px;padding:28px;color:var(--forest);font-size:1.35rem;line-height:1.35;font-weight:800;box-shadow:0 12px 30px rgba(23,76,56,.08)}
+    .goal-quote span{display:block;font-size:.85rem;color:var(--green);font-weight:600;margin-top:14px}
+    .school-strip{display:flex;align-items:center;gap:18px;margin:0 0 24px;padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:#fff}
+    .school-strip img{width:88px;height:88px;object-fit:contain;display:block;flex-shrink:0;background:transparent;border:0;border-radius:0;padding:0}
+    .school-strip strong{display:block;color:var(--forest);font-size:1.05rem}
+    .school-strip span{display:block;color:var(--muted);font-size:.88rem}
+    .interest-section{background:#f4f7ef}
+    .interest-layout{display:grid;grid-template-columns:.72fr 1.28fr;gap:28px;align-items:start;max-width:1000px;margin:0 auto}
+    .interest-intro{background:var(--forest);color:#fff;border-radius:22px;padding:26px;position:static;align-self:start}
+    .interest-intro h3{font-size:1.55rem;line-height:1.2;margin:10px 0}
+    .interest-intro p,.interest-intro li{color:#d7e6da}
+    .interest-intro ul{padding-left:20px}
+    .interest-form{background:white;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 12px 32px rgba(23,76,56,.08);min-width:0}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 18px}
+    .field{display:flex;flex-direction:column;gap:7px}
+    .field.full{grid-column:1/-1}
+    .field label,.field legend{font-size:.9rem;font-weight:800;color:var(--forest)}
+    .field input,.field select,.field textarea{width:100%;font:inherit;border:1px solid #d5dfd2;border-radius:12px;padding:12px 13px;background:#fff;color:var(--ink)}
+    .field textarea{min-height:105px;resize:vertical}
+    .field input:focus,.field select:focus,.field textarea:focus{outline:3px solid #d9edbd;border-color:var(--green)}
+    fieldset.field{border:0;padding:0;margin:0}
+    .radio-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:10px;align-items:stretch}
+    .radio-pill{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:9px;text-align:center;min-width:0;min-height:118px;border:1px solid #dfe7d9;border-radius:14px;padding:13px 9px;font-size:.82rem;line-height:1.35;color:var(--ink);font-weight:700;background:#fbfcf8;cursor:pointer;transition:border-color .15s,background .15s,transform .15s}
+    .radio-pill:hover{border-color:#9abf86;transform:translateY(-1px)}
+    .radio-pill:has(input:checked){border-color:var(--green);background:#edf5e5;box-shadow:inset 0 0 0 1px var(--green)}
+    .rating-top{display:flex;align-items:center;justify-content:center;gap:7px;width:100%}
+    .rating-number{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#e5efda;color:var(--forest);font-size:.85rem;font-weight:900;flex:0 0 auto}
+    .radio-pill:has(input:checked) .rating-number{background:var(--forest);color:#fff}
+    .radio-pill input{accent-color:var(--green);width:17px;height:17px;margin:0;flex:0 0 auto}
+    .rating-description{display:block;min-height:2.7em}
+    .form-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+    .form-note{font-size:.8rem;line-height:1.55;color:var(--muted);margin:16px 0 0;max-width:68ch}
+    .form-result{display:none;margin-top:18px;padding:16px;border-radius:14px;background:#eaf5e2;color:var(--forest);font-weight:700}
+    .form-result.show{display:block}
+    .footer{background:#103728;color:#d6e4d9;padding:35px 24px}
+    .footer-inner{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .footer strong{color:white}.footer p{margin:4px 0;font-size:.88rem}.back-top{font-weight:800;color:var(--leaf)}
+
+    .info-section{background:#fff}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .info-card{background:#f8faf5;border:1px solid var(--line);border-radius:20px;padding:24px}.info-card h3{color:var(--forest);margin:8px 0}.info-card p{color:var(--muted);font-size:.93rem;margin:0}.info-card .card-icon{font-size:1.7rem}
+    .local-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.local-item{display:flex;gap:15px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.local-item .card-icon{font-size:1.6rem}.local-item h3{margin:0 0 5px;color:var(--forest);font-size:1.02rem}.local-item p{margin:0;color:var(--muted);font-size:.9rem}
+    .team-section{background:#edf3e5}.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.team-card{background:white;border-radius:22px;overflow:hidden;box-shadow:0 10px 28px rgba(23,76,56,.08)}.team-card img{display:block;width:100%;height:330px;object-fit:cover;object-position:center 28%}.team-card:nth-child(3) img{object-position:center 35%}.team-body{padding:22px}.team-body h3{margin:0;color:var(--forest);font-size:1.18rem}.team-role{display:inline-block;margin:8px 0 10px;padding:5px 10px;border-radius:99px;background:#edf5e5;color:var(--green);font-weight:800;font-size:.78rem}.team-body p{margin:0;color:var(--muted);font-size:.92rem}.team-note{max-width:720px;text-align:center;margin:28px auto 0;color:var(--muted)}
+    @media(max-width:850px){.info-grid{grid-template-columns:1fr 1fr}.team-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.info-grid,.local-grid,.team-grid{grid-template-columns:1fr}.team-card img{height:360px}}
+    @media(max-width:850px){.interest-layout{grid-template-columns:1fr}.radio-row{grid-template-columns:repeat(3,minmax(0,1fr))}.interest-intro{position:static}.hero{grid-template-columns:1fr;gap:30px;padding-top:52px}.hero-visual{min-height:500px;max-width:590px;width:100%;margin:auto}.about-grid{grid-template-columns:1fr;gap:28px}.about-image{height:380px}.activity-grid{grid-template-columns:1fr 1fr}.benefit-grid{grid-template-columns:1fr 1fr}.help-grid{grid-template-columns:repeat(3,1fr)}.goal-panel{grid-template-columns:1fr}}
+    @media(max-width:600px){nav{padding:12px 18px}.brand-logo{width:40px;height:40px}.brand{font-size:.9rem}.brand-copy small{font-size:.62rem}.school-strip{align-items:center}.school-strip img{width:64px;height:64px}.interest-form{padding:21px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.radio-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.radio-pill{border-radius:12px;min-height:106px;padding:11px 7px}.rating-description{min-height:0}.interest-intro{padding:23px}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:65px;left:12px;right:12px;padding:18px;background:white;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:15px}.nav-links.open{display:flex}.nav-cta{text-align:center}.hero{padding:42px 20px 60px;gap:28px}h1{letter-spacing:-2px;font-size:3.2rem}.hero p{font-size:1rem}.hero-visual{min-height:420px}.hero-photo{inset:0 12px 17px 12px;width:calc(100% - 24px);height:calc(100% - 17px)}.round-stamp{width:82px;height:82px;font-size:.65rem;right:-1px}.photo-tag{padding:12px 14px;max-width:220px}.section{padding:62px 20px}.activity-grid{grid-template-columns:1fr}.activity-card img{height:290px}.benefit-grid{gap:12px}.benefit{padding:18px 15px;min-height:210px}.help-grid{grid-template-columns:1fr 1fr}.goal-panel{padding:27px 22px}.goal-quote{font-size:1.2rem;padding:22px}.about-image{height:330px}.footer-inner{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html#home"><img class="brand-logo" src="./index_files/immanuel-logo.png" alt="Sekolah Kristen Immanuel logo"><span class="brand-copy"><span>SMALL GREEN CHANGES</span><small>Sekolah Kristen Immanuel</small></span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html#project">Our Project</a><a href="file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html#activities">Activities</a><a href="file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html#benefits">Benefits</a><a href="file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html#get-involved">Get Involved</a><a class="nav-cta" href="file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html#volunteer-form">Join Us ↗</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <header class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> Sekolah Kristen Immanuel · Student volunteering</div>
+        <h1>A little more green. <em>A lot more good.</em></h1>
+        <p>We believe a greener school starts with small actions. By planting grass and caring for garden spaces, we can make our surroundings cleaner, more welcoming, and closer to nature.</p><div class="school-strip"><img src="./index_files/immanuel-logo.png" alt="Sekolah Kristen Immanuel school logo"><div><strong>Sekolah Kristen Immanuel</strong><span><b>Smart, Wise, and Accountable.</b></span></div></div>
+        <div class="actions"><a class="btn btn-primary" href="file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html#project">Explore our project <span>↓</span></a><a class="btn btn-secondary" href="file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html#activities">See what we did ↗</a><a class="btn btn-secondary" href="file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html#volunteer-form">I’m interested in volunteering ✳</a></div>
+        <div class="hero-note"><span class="mini-leaves">🌿</span><span><strong>Small steps matter.</strong><br>Let’s grow a greener school together.</span></div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-photo" src="./index_files/grass-closeup.png" alt="A close-up of green grass growing beside a school walkway">
+        <div class="round-stamp">GROW<br>GREEN<br>TOGETHER</div>
+        <div class="photo-tag"><strong>Greener, one patch at a time.</strong><span>Real action. Small spaces. Positive change.</span></div>
+      </div>
+    </header>
+
+    <section class="section" id="project">
+      <div class="section-inner about-grid">
+        <img class="about-image" src="./index_files/planting-grass.png" alt="A student carefully planting and tending grass in a garden bed" loading="lazy">
+        <div class="about-copy">
+          <div class="kicker">01 / Our project</div>
+          <h2>Making the most of small green spaces</h2>
+          <p>Our project focuses on simple improvements that students can make around the school. We are adding and maintaining small patches of grass in suitable areas instead of making major changes.</p>
+          <p>These little garden spaces can make the school look more cared for and remind everyone that nature deserves attention—even in small places.</p>
+          <ul class="check-list">
+            <li><span class="check">✓</span><span>Plant grass in suitable empty spaces.</span></li>
+            <li><span class="check">✓</span><span>Keep garden beds tidy and cared for.</span></li>
+            <li><span class="check">✓</span><span>Encourage students to protect the greenery.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section activity-section" id="activities">
+      <div class="section-inner">
+        <div class="section-heading"><div class="kicker">02 / Our volunteering activities</div><h2>From small actions to greener spaces</h2><p>Our photos show how a little time and teamwork can help care for the school grounds.</p></div>
+        <div class="activity-grid">
+          <article class="activity-card"><img src="./index_files/planting-grass.png" alt="Student working carefully in the garden bed" loading="lazy"><div class="card-body"><div class="number">STEP 01</div><h3>Prepare and plant</h3><p>We worked carefully in a garden bed, planting small grasses in an area that could use more greenery.</p></div></article>
+          <article class="activity-card"><img src="./index_files/volunteer-gardening.png" alt="Student volunteering beside the newly cared-for garden" loading="lazy"><div class="card-body"><div class="number">STEP 02</div><h3>Care for the garden</h3><p>We checked the planting area and helped keep the surroundings neat while taking care of the plants.</p></div></article>
+          <article class="activity-card"><img src="./index_files/grass-closeup.png" alt="Small green grass plants beside a paved walkway" loading="lazy"><div class="card-body"><div class="number">STEP 03</div><h3>Watch the green grow</h3><p>Small patches of grass can add life to an ordinary corner. Regular care will help the plants establish themselves.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section info-section" id="organised"><div class="section-inner">
+      <div class="section-heading"><div class="kicker">03 / Organised volunteering</div><h2>Volunteering works better together</h2><p>Organised volunteering is planned by a school, foundation, charity, or community group. It gives volunteers clear tasks and helps activities create a lasting benefit.</p></div>
+      <div class="info-grid">
+        <article class="info-card"><div class="card-icon">🌿</div><h3>Environmental volunteering</h3><p>Join a school gardening day, plant suitable greenery, or help maintain shared outdoor spaces. These activities make the campus more welcoming and encourage environmental responsibility.</p></article>
+        <article class="info-card"><div class="card-icon">📚</div><h3>Educational volunteering</h3><p>Help younger students with reading, homework, or basic digital skills through a school-organised programme. Sharing knowledge can build confidence and support learning.</p></article>
+        <article class="info-card"><div class="card-icon">🤲</div><h3>Social and charity volunteering</h3><p>Take part in a donation drive or community visit organised by a trusted group. These efforts can provide practical support and help people feel included.</p></article>
+      </div></div></section>
+    <section class="section" id="local"><div class="section-inner">
+      <div class="section-heading"><div class="kicker">04 / Local volunteering</div><h2>Positive actions in our community</h2><p>There are many ways to volunteer close to home in Indonesia. Local activities help improve everyday life and strengthen relationships between neighbours.</p></div>
+      <div class="local-grid">
+        <article class="local-item"><div class="card-icon">🧹</div><div><h3>Neighbourhood clean-up</h3><p>Collect litter in approved public areas and sort waste where facilities are available. Cleaner surroundings are safer and more pleasant for everyone.</p></div></article>
+        <article class="local-item"><div class="card-icon">🌳</div><div><h3>Tree and plant care</h3><p>Plant suitable trees or maintain community gardens with permission. Green spaces provide shade, support local nature, and beautify the area.</p></div></article>
+        <article class="local-item"><div class="card-icon">🥫</div><div><h3>Food and clothing donations</h3><p>Help collect and organise useful donations through a trusted school or community programme. This can support families facing difficult circumstances.</p></div></article>
+        <article class="local-item"><div class="card-icon">🧑‍🏫</div><div><h3>Teaching and tutoring</h3><p>Assist children with reading or schoolwork in a supervised programme. Sharing time and knowledge can help learners feel supported.</p></div></article>
+      </div></div></section>
+    <section class="section info-section" id="international"><div class="section-inner">
+      <div class="section-heading"><div class="kicker">05 / International volunteering ideas</div><h2>Small efforts can have a global impact</h2><p>International volunteering can connect people across countries to address shared challenges. Students can learn about these efforts and support suitable, trusted initiatives.</p></div>
+      <div class="info-grid">
+        <article class="info-card"><div class="card-icon">🐢</div><h3>Environmental conservation</h3><p>Support reputable conservation campaigns that protect forests, oceans, and wildlife. Cooperation helps preserve natural resources for future generations.</p></article>
+        <article class="info-card"><div class="card-icon">🆘</div><h3>Disaster relief support</h3><p>Contribute through established humanitarian organisations collecting approved supplies or donations. Coordinated support can help affected communities recover.</p></article>
+        <article class="info-card"><div class="card-icon">🌏</div><h3>International education projects</h3><p>Join supervised cultural or learning exchanges that share educational resources and ideas. These programmes build understanding and cooperation between communities.</p></article>
+      </div></div></section>
+    <section class="section" id="benefits">
+      <div class="section-inner">
+        <div class="section-heading"><div class="kicker">03 / Why it matters</div><h2>Small green spaces, real benefits</h2><p>Planting a little grass may seem simple, but it can help create a more pleasant school environment.</p></div>
+        <div class="benefit-grid">
+          <article class="benefit"><div class="benefit-icon">🌼</div><h3>A brighter school</h3><p>Greenery can make empty corners look more attractive and welcoming.</p></article>
+          <article class="benefit"><div class="benefit-icon">🍃</div><h3>Closer to nature</h3><p>Plants help bring natural elements into the places where we learn every day.</p></article>
+          <article class="benefit"><div class="benefit-icon">🤝</div><h3>Teamwork</h3><p>Volunteering gives students a chance to cooperate and achieve something together.</p></article>
+          <article class="benefit"><div class="benefit-icon">💚</div><h3>Responsibility</h3><p>Looking after plants teaches us to care for shared spaces and the environment.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section help-section" id="get-involved">
+      <div class="section-inner">
+        <div class="section-heading"><div class="kicker">04 / Get involved</div><h2>Everyone can help our school grow</h2><p>You don’t need a big budget or a huge garden. Start with one useful action and keep it going.</p></div>
+        <div class="help-grid">
+          <article class="help-item"><div class="emoji">🌱</div><h3>Plant thoughtfully</h3><p>Choose suitable plants and get permission before planting.</p></article>
+          <article class="help-item"><div class="emoji">💧</div><h3>Water when needed</h3><p>Help plants get the water they need without wasting it.</p></article>
+          <article class="help-item"><div class="emoji">🧹</div><h3>Keep it clean</h3><p>Put rubbish in bins and keep garden areas tidy.</p></article>
+          <article class="help-item"><div class="emoji">👟</div><h3>Protect the grass</h3><p>Use pathways and avoid stepping on planted areas.</p></article>
+          <article class="help-item"><div class="emoji">🙌</div><h3>Volunteer together</h3><p>Invite friends to join school environmental activities.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="goals">
+      <div class="section-inner goal-panel">
+        <div><div class="kicker">05 / Our future goal</div><h2>Let’s keep the green growing.</h2><p>This project is just the beginning. We hope to maintain the grass we have planted, improve other suitable spaces, and inspire more students to take part in caring for the school grounds.</p><p>Planting is only the first step. With regular care and teamwork, small improvements can last.</p><a class="btn btn-primary" href="file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html#home">Start with one small step ↑</a></div>
+        <div class="goal-quote">“A greener school doesn’t happen in one day. It grows through the small things we do together.”<span>— Our project message 🌿</span></div>
+      </div>
+    </section>
+
+
+    <section class="section team-section" id="team"><div class="section-inner">
+      <div class="section-heading"><div class="kicker">06 / About us</div><h2>Meet the team behind the project</h2><p>We are a group of three students from Sekolah Kristen Immanuel working together to encourage volunteering and make our school greener.</p></div>
+      <div class="team-grid">
+        <article class="team-card"><img src="./index_files/fernando-nicholas.jpg" alt="Portrait of Fernando Nicholas" loading="lazy"><div class="team-body"><h3>Fernando Nicholas</h3><span class="team-role">Treasurer</span><p>Fernando is responsible for the project’s financial planning and keeping track of resources needed for our volunteering activities.</p></div></article>
+        <article class="team-card"><img src="./index_files/haskell-liao-zhiming.png" alt="Portrait of Haskell Liao Zhiming" loading="lazy"><div class="team-body"><h3>Haskell Liao Zhiming</h3><span class="team-role">Head of Organisation</span><p>Haskell coordinates the team, helps organise the project activities, and keeps the group working towards its shared goals.</p></div></article>
+        <article class="team-card"><img src="./index_files/darren-devitto.jpeg" alt="Portrait of Darren Devitto" loading="lazy"><div class="team-body"><h3>Darren Devitto</h3><span class="team-role">Secretary</span><p>Darren helps record project information, organise notes, and keep important details clear and well documented.</p></div></article>
+      </div><p class="team-note">Our roles are different, but we share one purpose: encouraging students to take small, practical actions for a greener school.</p>
+    </div></section>
+    <section class="section interest-section" id="volunteer-form">
+      <div class="section-inner">
+        <div class="section-heading"><div class="kicker">07 / Join the project</div><h2>Would you like to help our school grow?</h2><p>Tell us how interested you are and what kind of volunteering you might enjoy. Your answers can help us plan future green activities.</p></div>
+        <div class="interest-layout">
+          <aside class="interest-intro"><div class="kicker" style="color:var(--leaf)">Be part of the change</div><h3>Small actions. Shared responsibility.</h3><p>Students can support the project in many ways, even if they only have a little time to spare.</p><ul><li>Planting and caring for grass</li><li>Watering and maintaining garden beds</li><li>Keeping green areas clean</li><li>Sharing ideas for greener school spaces</li></ul><p><br>Smart, Wise, and Accountable.</p></aside>
+          <form class="interest-form" id="interestForm">
+            <div class="form-grid">
+              <div class="field"><label for="studentName">Name</label><input id="studentName" name="studentName" autocomplete="name" placeholder="Your name"></div>
+              <div class="field"><label for="studentClass">Class / year</label><input id="studentClass" name="studentClass" placeholder="e.g. Grade 10"></div>
+              <fieldset class="field full"><legend>How interested are you in joining a school greening activity? *</legend><div class="radio-row"><label class="radio-pill"><span class="rating-top"><span class="rating-number">1</span><input type="radio" name="interest" value="1 - Not sure yet" required=""></span><span class="rating-description">Not sure yet</span></label><label class="radio-pill"><span class="rating-top"><span class="rating-number">2</span><input type="radio" name="interest" value="2 - A little interested"></span><span class="rating-description">A little interested</span></label><label class="radio-pill"><span class="rating-top"><span class="rating-number">3</span><input type="radio" name="interest" value="3 - Interested"></span><span class="rating-description">Interested</span></label><label class="radio-pill"><span class="rating-top"><span class="rating-number">4</span><input type="radio" name="interest" value="4 - Very interested"></span><span class="rating-description">Very interested</span></label><label class="radio-pill"><span class="rating-top"><span class="rating-number">5</span><input type="radio" name="interest" value="5 - Definitely want to join"></span><span class="rating-description">Definitely want to join!</span></label></div></fieldset>
+              <div class="field"><label for="activityChoice">What would you like to help with?</label><select id="activityChoice" name="activityChoice"><option value="">Choose an activity</option><option>Planting grass or small plants</option><option>Watering and caring for plants</option><option>Cleaning and maintaining garden areas</option><option>Sharing ideas for greener spaces</option><option>Any of these activities</option></select></div>
+              <div class="field"><label for="availability">When could you help?</label><select id="availability" name="availability"><option value="">Choose your availability</option><option>During a school activity day</option><option>After school, if permitted</option><option>Occasionally when available</option><option>Not sure yet</option></select></div>
+              <div class="field full"><label for="ideas">Questions or ideas (optional)</label><textarea id="ideas" name="ideas" placeholder="Share an idea for making our school greener, or ask for more information."></textarea></div>
+            </div>
+            <div class="form-actions"><button class="btn btn-primary" type="submit">Prepare my response ↓</button><button class="btn btn-secondary" type="reset">Clear form</button></div>
+            <p class="form-note">Privacy note: This website is a project demo and does not send or store your answers for the school. After you submit, you can download your response to share with your teacher or project organiser.</p>
+            <div class="form-result" id="formResult" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-inner"><div style="display:flex;align-items:center;gap:14px"><img src="./index_files/immanuel-logo.png" alt="Sekolah Kristen Immanuel logo" style="width:76px;height:76px;object-fit:contain;display:block;background:transparent;border:0;border-radius:0;padding:0;flex:0 0 auto"><div><strong>Sekolah Kristen Immanuel</strong><p>Small Green Changes · Student volunteering project</p><p>Smart, Wise, and Accountable.</p></div></div><p>Small actions. Shared responsibility. A greener future.</p><a class="back-top" href="file:///C:/Users/LENOVO/Downloads/greener-school-website/index.html#home">Back to top ↑</a></div></footer>
+  <script>
+    const menuBtn=document.getElementById('menuBtn');
+    const navLinks=document.getElementById('navLinks');
+    menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+    const interestForm=document.getElementById('interestForm');
+    const formResult=document.getElementById('formResult');
+    interestForm.addEventListener('submit',(event)=>{
+      event.preventDefault();
+      if(!interestForm.reportValidity()) return;
+      const data=new FormData(interestForm);
+      const response=[
+        'SMALL GREEN CHANGES — VOLUNTEER INTEREST RESPONSE',
+        'School: Sekolah Kristen Immanuel',
+        'Motto: Smart, Wise, and Accountable.',
+        '',
+        'Name: '+(data.get('studentName')||'Not provided'),
+        'Class / year: '+(data.get('studentClass')||'Not provided'),
+        'Interest rating: '+data.get('interest'),
+        'Preferred activity: '+(data.get('activityChoice')||'Not selected'),
+        'Availability: '+(data.get('availability')||'Not selected'),
+        'Questions or ideas: '+(data.get('ideas')||'None provided'),
+        '',
+        'Please share this response with the teacher or project organiser.'
+      ].join('\n');
+      formResult.innerHTML='Thanks for your interest! Your response is ready. Use the button below to download it and share it with your teacher or project organiser.';
+      const download=document.createElement('button');
+      download.type='button'; download.className='btn btn-primary'; download.style.marginTop='12px'; download.textContent='Download my response';
+      download.addEventListener('click',()=>{const blob=new Blob([response],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='green-school-volunteer-interest.txt';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);});
+      formResult.appendChild(document.createElement('br')); formResult.appendChild(download); formResult.classList.add('show');
+    });
+    interestForm.addEventListener('reset',()=>{formResult.classList.remove('show');formResult.innerHTML='';});
+  </script>
+
+
+</body></html>
